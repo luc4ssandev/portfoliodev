@@ -1,0 +1,76 @@
+---
+import Arrow from "../components/Arrow.astro";
+---
+
+<!-- shadow-violet-800/30 shadow-lg-->
+<header class="flex justify-center w-full font-extralight text-black text-md fixed z-50 bg-[#FEFEFF]">
+    <div class="w-[86%] flex items-center justify-between border-b border-black/10 py-2 md:ml-16">
+        <!-- Menu Toggle for Mobile -->
+        <div class="menu-toggle lg:hidden" id="menu-toggle">
+            &#9776;
+        </div>
+        <!-- Main Navigation -->
+        <nav class="w-full lg:flex items-center justify-between hidden" id="menu">
+            <ul class="flex gap-4">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about-me">Sobre mí</a></li>
+            </ul>
+            <img src="/public/1.png" alt="logo" class="size-12 ml-4">
+            <ul class="flex gap-4 items-center">  
+                <li><a href="#proyects">Proyectos</a></li>
+                <li class="border-[1.5px] py-[0.1rem] px-3 border-[#EC6235] rounded-full "><a href="#" class="flex">Contactar <Arrow /></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+    a:hover, a:focus {
+        color: #8319FB;
+    }
+
+    /* Mobile menu styles */
+    @media (max-width: 1024px) {
+        .menu-toggle {
+            display: block;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        #menu {
+            display: none;
+            flex-direction: column;
+            background-color: #FEFEFF;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        #menu.active {
+            display: flex;
+        }
+
+        #menu ul {
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        #menu img {
+            display: none;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    });
+</script>

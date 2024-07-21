@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Home from "../components/Home.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Proyects from "../components/Proyects.astro";
+import Experience from "../components/Experience.astro";
+
+---
+
+<Layout title="Lucas Sánchez | Portfolio">
+  <main>
+    <Home />
+    <div class="flex flex-col gap-12 py-28">
+      <Experience />
+      <AboutMe />
+      <Proyects />
+    </div>
+    
+    <!-- <Proyects /> -->
+
+  </main>
+<!-- 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var link = document.querySelector("a[href='#about-me']");
+      var section = document.getElementById("about-me");
+      var link1 = document.querySelector("a[href='#proyects']");
+      var section1 = document.getElementById("proyects");
+      var section2 = document.getElementById("home");
+
+      link.addEventListener("click", function (event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+        // Muestra el section
+        section.classList.remove("hidden");
+        section2.classList.add("hidden");
+        section.scrollIntoView({ behavior: "smooth" });
+      });
+      link1.addEventListener("click", function (event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+        // Muestra el section
+        section1.classList.remove("hidden");
+        section2.classList.add("hidden");
+        section1.scrollIntoView({ behavior: "smooth" });
+      });
+    }); -->
+
+  </script>
+</Layout>
