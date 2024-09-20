@@ -5,21 +5,18 @@ import Menu from "../components/icon/Menu.astro";
 
 <!-- shadow-violet-800/30 shadow-lg-->
 <header class="flex justify-center w-full font-extralight text-black text-md fixed z-50 bg-[#FEFEFF]">
-    <div class="w-full flex items-center justify-between border-b border-black/10 py-2 px-2 md:ml-16">
+    <div class="w-full md:w-[90%] flex items-center justify-between border-b border-black/10 py-2 px-2">
         <!-- Menu Toggle for Mobile -->
-        <img src="/1.png" alt="logo" class="size-12">
+        <img src="/1.png" alt="logo" class="size-12 lg:hidden">
         <div class="menu-toggle flex lg:hidden" id="menu-toggle">
-            <!-- &#9776; -->
             <Menu />
         </div>
-        <!-- Main Navigation -->
-        <nav class="w-full lg:flex items-center justify-between hidden" id="menu">
+        <nav class="w-full lg:flex justify-between items-center hidden" id="menu">
+            <img src="/1.png" alt="logo" class="size-12">
             <ul class="flex gap-4">
+                
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#about-me">Sobre mí</a></li>
-            </ul>
-            <img src="/public/1.png" alt="logo" class="size-12 ml-4">
-            <ul class="flex gap-4 items-center">  
                 <li><a href="#proyects">Proyectos</a></li>
                 <li class="border-[1.5px] py-[0.1rem] px-3 border-[#EC6235] rounded-full "><a href="#" class="flex">Contactar <Arrow /></a></li>
             </ul>

@@ -5,26 +5,39 @@ import OpenWork from "../components/OpenWork.astro";
 
 <section
   id="home"
-  class="md:h-screen w-full flex justify-center items-end relative bg-cover bg-center"
+  class=" w-full flex justify-center md:py-20 relative bg-cover bg-center"
 >
-  <div class="w-[98%]">
+  <div class="w-[98%] md:w-[70%]">
     <div class="flex flex-col mt-20">
       <div class="flex items-center gap-2">
-      <img src="/img-profile.png" alt="Profile" class="w-[26%] md:w-[12%] rounded-full" />
-      <div class="tracking-widest text-center ">
-        
-        <h2 class="font-semibold text-gray-600 mb-1">&lt; Desarrollador Web /&gt;</h2>
-        <OpenWork />
-        <!-- <h2 class="text-[#EC6235]">Disponible para trabajar</h2> --> 
+        <img
+          src="/img-profile.png"
+          alt="Profile"
+          class="w-[26%] md:w-[12%] rounded-full"
+        />
+        <div class="tracking-widest text-center">
+          <h2 class="font-semibold text-gray-600 mb-1">
+            &lt; Desarrollador Web /&gt;
+          </h2>
+          <OpenWork />
+          <!-- <h2 class="text-[#EC6235]">Disponible para trabajar</h2> -->
+        </div>
       </div>
-      
-    </div>
-    <div class="ml-2 my-2">
-      <h1 class="text-4xl md:text-8xl font-black md:text-center mb-2">
-        Hola, soy
-        <span class="bg-gradient-to-r from-[#8001ff] to-[#8319FB] text-transparent bg-clip-text">Lucas San.</span>
-      </h1>
-      <span class="text-xl font-semibold text-gray-500"><span class="text-[#EC6235]">+1.5</span> años de experiencia en <span class="text-[#EC6235]">Desarrollo web</span>, orientado principalmente al <span class="text-[#EC6235]">Frontend</span>. De Córdoba, Argentina 🇦🇷.</span></div>
+      <div class="ml-2 my-2">
+        <h1 class="text-4xl md:text-6xl font-black mb-2">
+          Hola, soy
+          <span
+            class="bg-gradient-to-r from-[#8001ff] to-[#8319FB] text-transparent bg-clip-text"
+            >Lucas San.</span
+          >
+        </h1>
+        <span class="text-xl font-semibold text-gray-500"
+          ><span class="text-[#EC6235]">+1.5</span> años de experiencia en <span
+            class="text-[#EC6235]">Desarrollo web</span
+          >, orientado principalmente al <span class="text-[#EC6235]"
+            >Frontend</span
+          >.<br class="hidden md:flex" /> De Córdoba, Argentina 🇦🇷.</span>
+      </div>
     </div>
     <Networks />
   </div>
