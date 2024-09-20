@@ -1,16 +1,29 @@
 ---
 import Code from "./icon/Code.astro";
+import Card from "./Card.astro";
 ---
 
 <section id="proyects">
-<div class="pb-4 bg-[#8001ff]">
-  <div class="inline-flex items-center gap-2 px-2 py-1 mx-2 bg-white rounded-b-xl">
-    <Code />
-  <h2
-            class="bg-gradient-to-r from-[#8001ff] to-[#4e4eff] text-transparent bg-clip-text text-3xl font-black tracking-wide"
-          >
-
-            Proyectos
-          </h2></div>
-</div>
+  <div class="pb-4 bg-[#8001ff]">
+    <div class="md:w-[86%] mx-auto">
+      <div
+        class="inline-flex items-center gap-2 px-2 py-1 bg-white rounded-b-xl"
+      >
+        <Code />
+        <h2
+          class="bg-gradient-to-r from-[#8001ff] to-[#4e4eff] text-transparent bg-clip-text text-3xl font-black tracking-wide"
+        >
+          Proyectos
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="px-4 md:w-[86%] md:mx-auto">
+    <Card
+      title="Educa</te> - La solución para adquirir habilidades digitales"
+      href="https://educa-te.com.ar/"
+      description="Sitio web para la compra de ebooks enfocados en el desarrollo de habilidades digitales. Creado con Astro y TailwindCSS, e integrado con Zapier para enviar correos automatizados y conectarse con hojas de cálculo, optimizando la gestión y seguimiento de los usuarios."
+      portada="/proyect1.png"
+    />
+  </div>
 </section>
