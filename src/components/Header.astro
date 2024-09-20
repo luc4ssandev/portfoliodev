@@ -11,15 +11,18 @@ import Menu from "../components/icon/Menu.astro";
         <div class="menu-toggle flex lg:hidden" id="menu-toggle">
             <Menu />
         </div>
-        <nav class="w-full lg:flex justify-between items-center hidden" id="menu">
+        <nav class="w-full lg:flex justify-between hidden items-start md:items-center" id="menu">
             <img src="/1.png" alt="logo" class="size-12">
             <ul class="flex gap-4">
-                
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about-me">Sobre mí</a></li>
-                <li><a href="#proyects">Proyectos</a></li>
-                <li class="border-[1.5px] py-[0.1rem] px-3 border-[#EC6235] rounded-full "><a href="#" class="flex">Contactar <Arrow /></a></li>
-            </ul>
+                <li class="pl-4"><a href="#home">Inicio</a></li>
+                <li class="pl-4"><a href="#about-me">Sobre mí</a></li>
+                <li class="pl-4"><a href="#proyects">Proyectos</a></li>
+                <li class="border-[1.5px] py-[0.1rem] px-4 border-[#EC6235] rounded-full flex items-center justify-center">
+                    <a href="mailto:lucaas.sanchez16@gmail.com?subject=Contacto%20desde%20Portfolio%20-%20Reclutador%20IT&body=Hola%20Lucas,%0D%0A%0D%0AHe%20visto%20tu%20portfolio%20y%20estoy%20interesado%20en%20conversar%20sobre%20posibilidades%20laborales.%20%C2%BFPodr%C3%ADas%20ponerte%20en%20contacto%20conmigo%20para%20coordinar%20una%20reuni%C3%B3n?%0D%0A%0D%0AMuchas%20gracias,%0D%0A%0D%0A[Tu%20nombre%20y%20cargo]" class="flex items-center gap-2">
+                        Contactar 
+                        <Arrow />
+                    </a>
+                </li></ul>
         </nav>
     </div>
 </header>
