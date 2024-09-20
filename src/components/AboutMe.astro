@@ -1,0 +1,41 @@
+---
+import Arrow from "./Arrow2.astro";
+import Person from "./Person.astro";
+---
+
+<section id="experience" class="bg-white flex justify-center">
+  <div
+    class="h-1/2 flex justify-center items-center border md:w-[86%] rounded-3xl shadow shadow-[#8001ff]/20"
+  >
+    <div class="md:w-3/4">
+      <div class="flex justify-center items-center">
+        <div class="flex items-center gap-2 -mt-6 px-4 bg-white">
+          <Person />
+          <h2
+            class="bg-gradient-to-r from-[#8001ff] to-[#4e4eff] text-transparent bg-clip-text text-3xl font-black tracking-wide"
+          >
+            Sobre Mi
+          </h2>
+        </div>
+      </div>
+      <img src="/public/img-profile.png" alt="Profile" class="w-[26%] md:w-[12%] rounded-full mx-auto" />
+      <div class="flex flex-col mx-auto px-4 py-6">
+        <p class="font-medium">
+          Soy <span class="text-[#EC6235]">Lucas Sánchez</span>, y mi trayectoria en programación comenzó en la
+          licenciatura en <span class="text-[#EC6235]">Ciencias de la Computación</span>, pero pronto descubrí que lo mio era el <span class="text-[#EC6235]">desarrollo web</span>, donde me especialicé de forma
+          autodidacta. Desde entonces, he perfeccionado mis habilidades
+          trabajando en proyectos variados. <span class="text-[#EC6235] italic">Mi objetivo es diseñar interfaces intuitivas que optimicen la experiencia del usuario y hagan que la tecnología sea accesible para todos.</span><br><br>
+          Uno de mis mayores logros fue la
+          <span class="text-[#EC6235]">implementación de chatbots en ManyChat, integrados con inteligencia
+            artificial</span>, para automatizar la entrega de mensajes que previamente se
+          gestionaban manualmente. Este proyecto no solo mejoró la eficiencia en
+          la comunicación, sino que también redujo significativamente los
+          tiempos de respuesta y elevó la calidad del servicio al cliente.<br><br>
+          <span class="text-[#EC6235] italic">Actualmente, continúo perfeccionando mis conocimientos en tecnologías
+          como React, Astro y Tailwind, con el objetivo de crear soluciones
+          digitales innovadoras y accesibles.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

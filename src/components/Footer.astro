@@ -1,0 +1,12 @@
+---
+import Contact from "../components/Contact.astro";
+import Curriculum from "./Curriculum.astro";
+const currentYear = new Date().getFullYear()
+---
+
+<footer>
+  <div class="h-full w-full bg-[#8001ff] flex items-center flex-col text-white">
+    <!-- <Contact /> -->
+    <Curriculum />
+    <span class="mt-4 py-4 border-t border-white/50 w-[80%] text-center "> © {currentYear} Lucas Sánchez</span></div>
+</footer>
