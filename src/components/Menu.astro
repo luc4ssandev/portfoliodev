@@ -1,0 +1,19 @@
+---
+import MenuIcon from "../components/icon/MenuIcon.astro";
+---
+<div class="menu-toggle flex lg:hidden" id="menu-toggle">
+    <svg class="w-6 h-6 fill-current text-black">
+        <MenuIcon />
+    </svg>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    });
+</script>
