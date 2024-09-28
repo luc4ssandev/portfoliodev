@@ -1,11 +1,12 @@
 ---
 import Arrow from "./Arrow2.astro";
+import ArrowIcon from "./icon/ArrowIcon.astro";
 import Briefcase from "./Briefcase.astro";
 import Arrow3 from "./icon/Arrow3.astro";
 import Check from "./icon/Check.astro";
 ---
 
-<section id="experience" class="bg-white flex justify-center  ">
+<section id="experience" class="bg-white flex justify-center">
   <div
     class="h-1/2 flex justify-center items-center border md:w-[86%] rounded-3xl shadow shadow-[#8001ff]/20"
   >
@@ -20,65 +21,55 @@ import Check from "./icon/Check.astro";
           </h2>
         </div>
       </div>
-      <div class="flex flex-col items-center rounded-3xl px-4">
+      <div class="flex flex-col rounded-3xl px-4">
         <div
-          class="flex items-center w-full justify-between py-4 border-b-[1.5px] border-[#8002FE]"
+          class="flex items-center w-full justify-between pt-4 border-b-[1.5px] border-[#8002FE]"
         >
-        <div>
-        <h2 class="text-lg">Desarrollador Web Jr.</h2>
-          <h3 class="text-2xl font-semibold">
-            Wonderful3D |<br />Call Web Pro S.A.S
-          </h3>
-          <span class="text-[#8001ff]">Mayo 2023 - Septiembre 2024</span>
-        </div>
+          <div>
+            <h2 class="text-lg">Desarrollador Web Jr.</h2>
+            <h3 class="text-2xl font-semibold">
+              Wonderful3D |<br />Call Web Pro S.A.S
+            </h3>
+            <span class="text-[#8001ff]">Mayo 2023 - Septiembre 2024</span>
+          </div>
           <Arrow />
         </div>
-        <div class="flex flex-col mx-auto py-12">
+        <div class="flex flex-col mx-auto pt-8">
           <p class="text-black">
-            <div class="text-xl">
-              <span class=""
-                ><i
-                  class="ti ti-square-rounded-check-filled text-[#8319FB] mr-2"
-                ></i>Responsable de plataforma educativa, soporte y creacion de
-                funcionalidades para la mejora de experiencia de usuario.<br>
-                <i
-                  class="ti ti-square-rounded-check-filled text-[#8319FB] mr-2"
-                ></i>Encargado del desarrollo, mantenimiento y actualización de
+            <div class="text-xl flex flex-col gap-2">
+              <span class="inline-block">
+                  <Check /> Responsable de plataforma educativa, soporte y creacion de
+                  funcionalidades para la mejora de experiencia de usuario.
+              </span>
+              <span class="inline-block">
+                <Check /> Encargado del desarrollo, mantenimiento y actualización de
                 landing pages, con un enfoque en la mejora continua de la
-                experiencia de usuario. 
-                <br>
-                <i
-                  class="ti ti-square-rounded-check-filled text-[#8319FB] mr-2"
-                ></i>Desarrollé y optimicé funcionalidades
-                innovadoras para potenciar la interacción con los usuarios,
-                incluyendo la creación de chatbots conversacionales con IA.
-                <br>
-                <i
-                  class="ti ti-square-rounded-check-filled text-[#8319FB] mr-2"
-                ></i>
-                Implementé mejoras en la captación de leads mediante SMS, correo
-                electrónico, WhatsApp, y Facebook Messenger, logrando una
-                comunicación más efectiva. 
-                <br>
-                <i
-                  class="ti ti-square-rounded-check-filled text-[#8319FB] mr-2"
-                ></i>Además, lideré la automatización de
-                procesos internos para optimizar los tiempos de contacto con
-                clientes y mejorar la eficiencia operativa.</span
-              >
+                experiencia de usuario.
+            </span>
+            <span class="inline-block">
+              <Check /> Desarrollé y optimicé funcionalidades innovadoras para
+              potenciar la interacción con los usuarios, incluyendo la creación
+              de chatbots conversacionales con IA.
+          </span>
+          <span class="inline-block">
+            <Check /> Implementé mejoras en la captación de leads mediante SMS,
+            correo electrónico, WhatsApp, y Facebook Messenger, logrando una
+            comunicación más efectiva.
+        </span>
+        <span class="inline-block">
+          <Check /> Además, lideré la automatización de procesos internos para
+          optimizar los tiempos de contacto con clientes y mejorar la
+          eficiencia operativa.
+      </span>
             </div>
           </p>
-
-          <a href="#" class="text-[#8001ff] font-semibold text-xl flex items-center pt-4">Saber más<Arrow3 />
-
-            
-          </a>
-          <!-- <p class="mt-8 italic font-bold">
-            Mi experiencia en Wonderful3D me ha permitido adquirir habilidades
-            técnicas y de marketing, entregando soluciones efectivas y
-            personalizadas.
-          </p> -->
         </div>
+
+        <a
+          href="#"
+          class="text-[#8001ff] font-semibold text-xl flex items-center pt-4 pb-8"
+          >Saber más<Arrow3 />
+        </a>
       </div>
     </div>
   </div>
